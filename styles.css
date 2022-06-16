@@ -1,0 +1,423 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800|Poppins&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat',sans-serif;
+  }
+
+.cards{
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+}
+
+.cards h1{
+  font-size: 40px;
+  margin: 0 0 30px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.services{
+
+display: flex;
+align-items: center;
+}
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 4px;
+  transition: all .3s ease;
+}
+.content .fab{
+  font-size: 70px;
+  margin: 16px 0;
+}
+.content > *{
+  flex: 1 1 100%;
+}
+.content:hover{
+  color: white;
+}
+.content:hover a{
+  border-color: white;
+  background: white;
+}
+.content-1:hover{
+  border-color: #F0A500;
+  background: #F0A500;
+}
+.content-1:hover a{
+  color: #F0A500;
+}
+.content-2:hover{
+  border-color: #F0A500;
+  background: #F0A500;
+}
+.content-2:hover a{
+  color: #F0A500;
+}
+.content-3:hover{
+  border-color: #F0A500;
+  background: #F0A500;
+}
+.content-3:hover a{
+  color: #F0A500;
+}
+.content h2{
+  font-size: 30px;
+  margin: 16px 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.content p{
+  font-size: 17px;
+  font-family: 'Poppins',sans-serif;
+}
+.content a{
+  margin: 22px 0;
+  background: black;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid black;
+  padding: 15px 0;
+  border-radius: 25px;
+  transition: .3s ease;
+}
+.content a:hover{
+  border-radius: 4px;
+}
+@media (max-width: 900px) {
+  .services{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.img_set {
+    width: 100px;
+    height: 100px;
+}
+
+/* Seccion 4 */
+
+.circulo {
+    margin: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #090910;
+    border-radius: 50px;
+}
+.circulo h2{
+    color:#fff;
+}
+
+.section4 { 
+    width: 95%;
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px; 
+
+
+}
+
+.box { 
+    margin: 0.5em;
+    height: 200px;
+    color: #2b2725;
+    border: 2px solid #F0A500;
+    border-radius: 6px;
+    position: relative;
+    transition: .3s ease;
+    padding: 1em
+}
+
+.box:hover{
+    border-color: #F0A500;
+    background: #F0A500;
+  }
+
+.btn_section4 {
+  
+  display: flex;
+  margin: 20px auto;  
+  background: #090910;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid black;
+  padding: 10px 10px;
+  border-radius: 25px;
+  transition: .3s ease;
+  max-width: fit-content;
+
+}
+
+.btn_section4:hover {
+    border-radius: 4px; 
+    }
+
+    .titulo {
+   margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+    }
+
+
+    /*NAV BAR */ 
+
+    nav {
+      background: rgb(0, 0, 0);
+      color: rgb(255, 255, 255);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    nav .mainMenu {
+      display: flex;
+      list-style: none;
+    }
+    nav .mainMenu li a {
+      display: inline-block;
+      padding: 15px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: rgb(255, 255, 255);
+      font-size: 18px;
+      transition: 0.2s ease;
+    }
+    nav .mainMenu li a:hover {
+      background: rgb(255, 94, 0);
+    }
+    nav .openMenu {
+      font-size: 2rem;
+      margin: 20px;
+      display: none;
+      cursor: pointer;
+    }
+    nav .mainMenu .closeMenu,
+    .icons i {
+      font-size: 2rem;
+      display: none;
+      cursor: pointer;
+    }
+    .fa-facebook:hover {
+      color: rgb(0, 110, 255);
+    }
+    .fa-twitter:hover {
+      color: rgb(86, 154, 243);
+    }
+    .fa-instagram:hover {
+      color: rgb(255, 0, 191);
+    }
+    .fa-github:hover {
+      color: rgb(255, 123, 0);
+    }
+    nav .logo {
+      margin: 6px;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+    @media (max-width: 800px) {
+      nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(0, 0, 0);
+        transition: top 1s ease 0s;
+        display: none;
+      }
+      nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+      }
+      nav .openMenu {
+        display: block;
+      }
+      nav .mainMenu li a:hover {
+        background: none;
+        color: #F0A500;
+      }
+      .icons i {
+        display: inline-block;
+        padding: 12px;
+      }
+    }
+
+   /* SECCIONES ENTREGA 5 */
+
+   .div1-sec5 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4em 0px 8em 0px;
+}
+
+.div1-sec5 p{
+    padding: 2em 0px 3em 0px;
+}
+
+.div-imgs-sec5 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+    flex-wrap: wrap;
+}
+
+.div-imgs-sec5 img {
+    width: 15em;
+    min-width: 5em;
+}
+
+
+.seccion-6 {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: auto;
+    padding: 0em 0em 0em 8.8em;
+    align-items: stretch;
+    background-color: #F0A500;
+}
+
+.div1-sec6{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    animation: animacion-txt 1.5s ease 0.5s 1 normal;
+    -moz-animation: animacion-txt 1.5s ease 0.5s 1 normal;
+    -webkit-animation: animacion-txt 1.5s ease 0.5s 1 normal;
+    -o-animation: animacion-txt 1.5s ease 0.5s 1 normal;
+}
+
+@keyframes  animacion-txt {
+    from {bottom: -1000px;}
+    to {bottom: 0px;}
+
+}
+
+.div1-sec6 h2{
+    width: 100%;
+}
+
+.info-contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.divs-info {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    gap: 15px;
+    align-items: center;
+}
+.divs-info img, .div-redes img{
+    width: 32px;
+    height: 32px;
+}
+
+.div-redes{
+    display: flex;
+    flex-direction: row;
+    gap: 1.2em;
+    margin-top: 30px;
+    height: 50px;
+    align-items: center;
+}
+.div-redes a:nth-child(1){
+    position: relative;
+    animation: animacion-redes 1s ease-in-out 0.5s infinite alternate;
+    -moz-animation: animacion-redes 1s ease-in-out 0.5s infinite  alternate;
+    -webkit-animation: animacion-redes 1s ease-in-out 0.5s infinite  alternate;
+    -o-animation: animacion-redes 1s ease-in-out 0.5s infinite  alternate;
+}
+.div-redes a:nth-child(2){
+    position: relative;
+    animation: animacion-redes 1s ease-in-out 0.25s infinite alternate;
+    -moz-animation: animacion-redes 1s ease-in-out 0.25s infinite  alternate;
+    -webkit-animation: animacion-redes 1s ease-in-out 0.25s infinite  alternate;
+    -o-animation: animacion-redes 1s ease-in-out 0.25s infinite  alternate;
+}
+.div-redes a:nth-child(3){
+    position: relative;
+    animation: animacion-redes 1s ease-in-out 0.75s infinite alternate;
+    -moz-animation: animacion-redes 1s ease-in-out 0.75s infinite  alternate;
+    -webkit-animation: animacion-redes 1s ease-in-out 0.75s infinite  alternate;
+    -o-animation: animacion-redes 1s ease-in-out 0.75s infinite  alternate;
+}
+@keyframes  animacion-redes {
+    from {
+        transform: translate(0, -4px);
+    }
+    to {
+        transform: translate(0, 4px);
+    }
+}
+
+.tarjeta-contacto{
+    display: flex;
+    flex-direction: column;
+    width: 15em;
+    gap: 30px;
+    padding: 2em 1em;
+}
+.tarjeta-contacto p{
+    font-size: 14px;
+}
+
+.contacto1-sec5{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.div2-sec6 {
+    height: auto;
+    width: 100%;
+}
+
+.div2-sec6 img{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 680px;
+    margin-bottom: -10px;
+    animation: animacion-img 1.2s ease 0.5s 1 normal running;
+    -moz-animation: animacion-img 1.2s ease 0.5s 1 normal running;
+    -webkit-animation: animacion-img 1.2s ease 0.5s 1 normal running;
+    -o-animation: animacion-img 1.2s ease 0.5s 1 normal running;
+}
+
+@keyframes  animacion-img {
+    from {right: -2000px;}
+    to {right: 0px;}
+}
